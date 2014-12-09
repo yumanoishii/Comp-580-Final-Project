@@ -1,0 +1,96 @@
+/* Space out content a bit */
+body {
+  background-color: black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* change the blue hover to purple*/
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  font-family:'Droid Sans' serif;
+  color:white;
+  padding-bottom: 19px;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+
+h4{
+  font-family:'Droid Sans' serif;
+  font-size: 25px;
+  color: white;
+}
+
+p{
+  font-family:'Droid Sans' serif;
+  font-size: 15px;
+  color: white;
+}
+
+
+}
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 15px;
+    /*background-image:url('imgs/beaker0.png');*/
+
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 700px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing{
+    padding-top: 0px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 15px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}

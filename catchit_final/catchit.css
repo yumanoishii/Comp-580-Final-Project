@@ -1,0 +1,510 @@
+html{
+    /*disable bottom scroll*/
+    overflow-x: hidden;
+}
+
+h1{
+    position: relative;
+    left:10%;
+    top:10%;
+}
+
+#logo a{
+    text-decoration:none;
+    color:white;
+}
+
+#logo a:hover{
+    opacity:0.7;
+}
+
+#game_matrix{
+    position:relative;
+    left:45px;
+    border: 2px solid white;
+    height:660px;
+    width: 600px;
+    /*background-image:url('imgs/startscr.png');*/
+    background-color:black;
+    border-radius: 5px 5px 5px 5px;
+}
+
+#dropzone{
+    margin:0 auto;
+    position:relative;
+    overflow:hidden;
+    /*border:1px solid yellow;*/
+    width:600px;
+    height:600px;
+}
+
+.menu_btn{
+    position:relative;
+    left:20%;
+    top:40%;
+    padding:5px;
+    margin:10px;
+    width:365px;
+    font-size:20px;
+    font-family:monospace, sans-serif;
+}
+
+.win_btn{
+    display:inline-block;
+    left:15px;
+    top:-80px;
+    position:relative;
+    padding:10px;
+    margin:30px;
+}
+
+#play button, #how button{
+    width:350px;
+    font-size:20px;
+    font-family:monospace, sans-serif;
+    color:black;
+    opacity:0.9;
+}
+
+#how_div{
+    position:relative;
+    left:75px;
+    top:200px;
+    width:450px;
+    height:300px;
+}
+
+#how_txt{
+    height:315px;
+    background:#782091;
+    opacity:0.7;
+    border-radius:5px 5px 5px 5px;
+    color:white;
+    padding:10px;
+}
+
+#how_play{
+    position:relative;
+    left:115px;
+    width:220px;
+    height:60px;
+    padding:7px;
+    margin:7px;
+}
+
+#how_play button{
+    width:200px;
+    height:40px;
+    color:#782091;
+    font-size:20px;
+    font-family:monospace;
+    opacity:0.8;
+}
+
+#gridinst{
+    width:400px;
+    position:relative;
+    left:100px;
+    top:445px;
+    font-size:17px;
+    color:white;
+    opacity:0.8;
+    padding:5px;
+    border: 2px dotted #782091;
+    border-radius: 5px 5px 5px 5px;
+}
+
+#lv0inst, #lv1inst, #lv2inst{
+    font-size:25px;
+    color:white;
+    display:inline-block;
+    position:relative;
+    left:50px;
+    top:-500px;
+    width:500px;
+    background:black;
+    padding:8px;
+    opacity:0.5;
+    border-radius: 5px 5px 5px 5px;
+}
+
+#lv1inst, #lv2inst{
+    top:-600px;
+}
+
+#mvm{
+    display:inline-block;
+    position:relative;
+    left:52px;
+    top:-150px;
+    width:500px;
+    height:120px;
+}
+
+#left_btn button, #right_btn button{
+    height:120px;
+    width:120px;
+    opacity:0.8;
+    background:orange;
+    font-size:70px;
+    color:white;
+    opacity:0.5;
+    border:none;
+}
+
+#left_btn:hover, #right_btn:hover{
+    background:yellow;
+}
+
+#left_btn{
+    float:left;
+}
+
+#right_btn{
+    float:right;
+}
+
+#again button, #next button{
+    width:200px;
+    height:50px;
+    font-size:30px;
+    font-family:monospace, sans-serif;
+    opacity:0.9;
+}
+
+#win_message{
+    position:absolute;
+    left:100px;
+    top:0px;
+    width:400px;
+    height:75px;
+    color:white;
+    font-size:40px;
+    padding:10px;
+}
+
+#potion, #story{
+    position:relative;
+    width:250px;
+    height:150px;  
+}
+
+#potion{
+    /*background-image:url('imgs/potion0.gif');*/
+    border-radius:5px 5px 5px 5px;
+    left:30px;
+    top:-195px;
+    padding:5px;
+    /*background:white;*/
+}
+
+#story{
+    /*background-image:url('imgs/story0.png');*/
+    background-repeat:no-repeat;
+    background-size:contain;
+    left:290px;
+    top:70px;
+    width:250px;
+    height:350px;
+    margin:20px;
+    padding:5px;
+    /*border:2px dotted white;*/
+    border-radius: 5px 5px 5px 5px;
+    /*background:white;*/
+}
+
+
+#r0{
+    position:absolute;
+    top:210px;
+    left:50px;
+}
+
+#r1{
+    position:absolute;
+    top:310px;
+    left:50px;
+}
+
+.r_active{
+    border: 2px solid yellow;
+    background-color:black;
+}
+
+.lv button{
+   width:80px;
+    height:80px;
+    margin:10px;
+    font-family:monospace, sans-serif;
+    font-size:50px;
+    color:purple;
+    opacity:0.8;
+}
+
+.lv button:hover{
+    border:2px solid #ff5f32;
+    color:purple;
+    opacity:1;
+}
+
+.lv_num{
+    position:relative;
+    left:10px;
+    top:10px;
+    margin:10px;
+    font-size:20px;
+    color:white;
+}
+
+#pot{
+    background-image:url('imgs/pot.png');
+    background-repeat:no-repeat;
+    background-size:contain;
+    height:200px;
+    width:200px;
+    position:relative;
+    left:200px;
+    top:360px;
+}
+
+.drop {
+    background-repeat:no-repeat;
+    background-size:contain;
+    top:0px;
+    left:0px;
+    position:absolute;
+    z-index:200;
+    width:60px;
+    height:60px;
+}
+
+#status{
+    position:relative;
+    width:596px;
+    height:60px;
+    border-bottom:none;
+}
+
+#score, #prog{
+    float:left;
+    color:white;
+    font-size:20px;
+    padding:10px;
+    margin:5px;
+}
+
+#score{
+    width:150px; 
+}
+
+#prog{
+    width:100px;
+}
+
+#progbar{
+    float:left;
+    position:absolute;
+    top:11px;
+    left:262px;
+    width:0px;
+    height:30px;
+    background:green;
+    border-radius:5px 5px 5px 5px;
+    margin:5px;
+}
+
+div.wrap{
+    border:2px dotted #782091;
+    display:inline-block;
+    width:306px;
+    height:35px;
+    position:relative;
+    left:-6px;
+    top:14px;
+    border-radius:5px 5px 5px 5px;
+}
+
+#final_div{
+    
+}
+
+#final_message, #final_p, #bk2menu{
+    position:relative;
+    top:10px;
+    left:100px;
+    width:400px;
+    color:white;
+    font-size:30px;
+    margin:10px;
+}
+
+#final_message{
+    font-size:40px;
+    text-align:center;
+    margin-bottom:40px;
+}
+
+#final_p{
+    width:450px;
+    background:black;
+    opacity:0.5;
+    margin-bottom:25px;
+}
+
+#bk2menu{
+    left:150px;
+    width:315px;
+    padding:5px;
+}
+
+#bk2menu button{
+    width:300px;
+    height:50px;
+    font-size:20px;
+    font-family:monospace;
+    
+}
+
+/*ABOUT US*/
+/* Space out content a bit */
+body {
+  background-color: black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+ {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* change the blue hover to purple*/
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  font-family:'Droid Sans' serif;
+  color:white;
+  padding-bottom: 19px;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+
+.YW{
+  background-color: white;
+  border-bottom: 1px solid #e5e5e5;
+  border: solid;
+  border-width: 5px;
+  padding: 15px;
+  height: 340px;
+  font-family:'Droid Sans' serif;
+}
+
+.bio_y{
+  background-color: green;
+    border-radius: 5px;
+    color:white;
+    padding: 3px;
+}
+
+#yuman{
+   width: 125px;
+   height: 160px;
+   border-radius: 5px;
+   margin-right: 20px;
+}
+.WJ{
+  background-color: white;
+  border-bottom: 1px solid #e5e5e5;
+  border: solid;
+  border-width: 5px;
+  padding: 15px;
+  height: 350px;
+  font-family:'Droid Sans' serif;
+}
+
+#whitney{
+   width: 125px;
+   height: 160px;
+   border-radius: 5px;
+   margin-right: 20px;
+
+  }
+
+  .bio{
+    background-color: purple;
+    border-radius: 5px;
+    color:white;
+    padding: 3px;
+  }
+  
+  #about{
+    font-size: 14px;
+  }
+
+.PS{
+  background-color: white;
+  border-bottom: 1px solid #e5e5e5;
+  border: solid;
+  border-width: 5px;
+  padding: 15px;
+  height: 320px;
+  font-family:'Droid Sans' serif;
+}
+
+#pranavi{
+   width: 125px;
+   height: 160px;
+   border-radius: 5px;
+   margin-right: 20px;
+
+  }
+
+   .b{
+    background-color: blue;
+    border-radius: 5px;
+    color:white;
+    padding: 3px;
+  }
+
+h4{
+  font-family:'Droid Sans' serif;
+  font-size: 25px;
+  color: white;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 700px) {
+  /* Remove the padding we set earlier */
+  .header{
+    padding-top: 0px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 15px;
+  }
+
+}
+}
+
+
+
